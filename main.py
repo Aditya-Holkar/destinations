@@ -18,7 +18,7 @@ feature_vectors = vectorizer.fit_transform(combined_features)
   
 similarity = cosine_similarity(feature_vectors)
   
-name = input()
+name = input('Enter the City name that you want to Explore')
   
 list_of_all_Places = data['City'].tolist()
   

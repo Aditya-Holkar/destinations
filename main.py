@@ -8,9 +8,9 @@ data = pd.read_csv(open_url("https://raw.githubusercontent.com/Aditya-Holkar/dja
 
 data['Rating']=data['Rating'].apply(str)
 
-selected_features = ['Place','City']
+selected_features = ['City']
 
-combined_features = data['Place']+' '+data['City']
+combined_features = data['City']
   
 vectorizer = TfidfVectorizer()
 
